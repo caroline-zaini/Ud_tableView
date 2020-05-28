@@ -9,23 +9,35 @@
 /* Begin PBXBuildFile section */
 		BD15A06E247D260C00A55078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD15A06D247D260C00A55078 /* AppDelegate.swift */; };
 		BD15A070247D260C00A55078 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD15A06F247D260C00A55078 /* SceneDelegate.swift */; };
-		BD15A072247D260C00A55078 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD15A071247D260C00A55078 /* ViewController.swift */; };
 		BD15A075247D260C00A55078 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD15A073247D260C00A55078 /* Main.storyboard */; };
 		BD15A077247D261000A55078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD15A076247D261000A55078 /* Assets.xcassets */; };
 		BD15A07A247D261000A55078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD15A078247D261000A55078 /* LaunchScreen.storyboard */; };
 		BD15A082247D263F00A55078 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD15A081247D263F00A55078 /* MyTableViewController.swift */; };
+		BD15A084247D278B00A55078 /* MyCustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD15A083247D278B00A55078 /* MyCustomTableView.swift */; };
+		BD15A086247D288700A55078 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD15A085247D288700A55078 /* Country.swift */; };
+		BD15A088247D29C200A55078 /* CountryGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD15A087247D29C200A55078 /* CountryGetter.swift */; };
+		BD15A08A247EC05800A55078 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD15A089247EC05800A55078 /* DetailViewController.swift */; };
+		BD15A08C247FD83600A55078 /* Continent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD15A08B247FD83600A55078 /* Continent.swift */; };
+		BD15A092247FE48200A55078 /* MyFirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD15A091247FE48200A55078 /* MyFirstCell.swift */; };
+		BD15A094247FECD500A55078 /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD15A093247FECD500A55078 /* RoundedImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BD15A06A247D260C00A55078 /* tableview_tableViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tableview_tableViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD15A06D247D260C00A55078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD15A06F247D260C00A55078 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BD15A071247D260C00A55078 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BD15A074247D260C00A55078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD15A076247D261000A55078 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD15A079247D261000A55078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD15A07B247D261000A55078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD15A081247D263F00A55078 /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
+		BD15A083247D278B00A55078 /* MyCustomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomTableView.swift; sourceTree = "<group>"; };
+		BD15A085247D288700A55078 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		BD15A087247D29C200A55078 /* CountryGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryGetter.swift; sourceTree = "<group>"; };
+		BD15A089247EC05800A55078 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BD15A08B247FD83600A55078 /* Continent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Continent.swift; sourceTree = "<group>"; };
+		BD15A091247FE48200A55078 /* MyFirstCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstCell.swift; sourceTree = "<group>"; };
+		BD15A093247FECD500A55078 /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +70,54 @@
 		BD15A06C247D260C00A55078 /* tableview_tableViewController */ = {
 			isa = PBXGroup;
 			children = (
-				BD15A06D247D260C00A55078 /* AppDelegate.swift */,
-				BD15A06F247D260C00A55078 /* SceneDelegate.swift */,
-				BD15A071247D260C00A55078 /* ViewController.swift */,
-				BD15A073247D260C00A55078 /* Main.storyboard */,
-				BD15A076247D261000A55078 /* Assets.xcassets */,
-				BD15A078247D261000A55078 /* LaunchScreen.storyboard */,
+				BD15A090247FD87600A55078 /* Supporting files */,
+				BD15A08F247FD86D00A55078 /* Controller */,
+				BD15A08E247FD85800A55078 /* View */,
+				BD15A08D247FD84600A55078 /* Model */,
 				BD15A07B247D261000A55078 /* Info.plist */,
 				BD15A081247D263F00A55078 /* MyTableViewController.swift */,
+				BD15A083247D278B00A55078 /* MyCustomTableView.swift */,
+				BD15A089247EC05800A55078 /* DetailViewController.swift */,
+				BD15A091247FE48200A55078 /* MyFirstCell.swift */,
 			);
 			path = tableview_tableViewController;
+			sourceTree = "<group>";
+		};
+		BD15A08D247FD84600A55078 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD15A087247D29C200A55078 /* CountryGetter.swift */,
+				BD15A085247D288700A55078 /* Country.swift */,
+				BD15A08B247FD83600A55078 /* Continent.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BD15A08E247FD85800A55078 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD15A073247D260C00A55078 /* Main.storyboard */,
+				BD15A093247FECD500A55078 /* RoundedImage.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD15A08F247FD86D00A55078 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BD15A090247FD87600A55078 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				BD15A078247D261000A55078 /* LaunchScreen.storyboard */,
+				BD15A076247D261000A55078 /* Assets.xcassets */,
+				BD15A06D247D260C00A55078 /* AppDelegate.swift */,
+				BD15A06F247D260C00A55078 /* SceneDelegate.swift */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +191,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD15A072247D260C00A55078 /* ViewController.swift in Sources */,
 				BD15A06E247D260C00A55078 /* AppDelegate.swift in Sources */,
 				BD15A070247D260C00A55078 /* SceneDelegate.swift in Sources */,
+				BD15A092247FE48200A55078 /* MyFirstCell.swift in Sources */,
+				BD15A084247D278B00A55078 /* MyCustomTableView.swift in Sources */,
+				BD15A086247D288700A55078 /* Country.swift in Sources */,
+				BD15A08C247FD83600A55078 /* Continent.swift in Sources */,
 				BD15A082247D263F00A55078 /* MyTableViewController.swift in Sources */,
+				BD15A094247FECD500A55078 /* RoundedImage.swift in Sources */,
+				BD15A088247D29C200A55078 /* CountryGetter.swift in Sources */,
+				BD15A08A247EC05800A55078 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
