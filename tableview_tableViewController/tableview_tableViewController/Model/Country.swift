@@ -14,6 +14,7 @@ class Country {
     private var _capital: String
     private var _countryCode: String
     
+    // les propriétés calculées permettent d'ajouter de la sécurité au code
     var name: String {
         return _name
     }

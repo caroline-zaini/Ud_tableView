@@ -14,6 +14,7 @@ class MyFirstCell: UITableViewCell {
     @IBOutlet weak var namelbl: UILabel!
     @IBOutlet weak var capitalLbl: UILabel!
     
+    // propriété stockée didSet est appelée juste après la modificaton de la propriété.
     var country: Country! {
         didSet {
             flag.image = country.flag

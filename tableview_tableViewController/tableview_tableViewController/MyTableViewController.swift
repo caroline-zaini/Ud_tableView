@@ -42,6 +42,8 @@ class MyTableViewController: UITableViewController {
 
     // MARK: - Edition des cellules
     
+    // Utilisation de la cell custom :
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         /// je récupère l'array continent par rapport à sa section puis le pays par rapport à sa ligne :
         let country = continents[indexPath.section].countries[indexPath.row]
@@ -103,7 +105,8 @@ class MyTableViewController: UITableViewController {
     }
     */
 
-
+    // MARK: - supprimer une row
+    
     /// On peut maintenant glisser vers la droite pour supprimer une row
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {

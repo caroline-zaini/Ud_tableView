@@ -51,7 +51,11 @@ extension MyCustomTableView: UITableViewDelegate, UITableViewDataSource {
         return countries.count
     }
     
+   
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        // Utilisation de la cell custom :
         if let cell = tableView.dequeueReusableCell(withIdentifier: "cell2") as? MyFirstCell2 {
             cell.setupCell(countries[indexPath.row])
             return cell
