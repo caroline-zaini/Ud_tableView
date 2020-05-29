@@ -1,6 +1,6 @@
 # Ud_tableView
  
-This app was made to understand the TableViewControler and tableView. We use :
+This app was made to understand the TableViewController and tableView. We use :
 
 - Tab bar et navigation bar
 - Edit rows and sections
