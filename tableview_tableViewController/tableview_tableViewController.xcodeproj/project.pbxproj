@@ -76,9 +76,9 @@
 			children = (
 				BD15A07B247D261000A55078 /* Info.plist */,
 				BD15A090247FD87600A55078 /* Supporting files */,
-				BD15A08F247FD86D00A55078 /* Controller */,
 				BD15A08E247FD85800A55078 /* View */,
 				BD15A08D247FD84600A55078 /* Model */,
+				BD15A08F247FD86D00A55078 /* Controller */,
 				BD15A081247D263F00A55078 /* MyTableViewController.swift */,
 				BD15A083247D278B00A55078 /* MyCustomTableView.swift */,
 				BD15A089247EC05800A55078 /* DetailViewController.swift */,
