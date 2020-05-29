@@ -74,16 +74,14 @@
 		BD15A06C247D260C00A55078 /* tableview_tableViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BD15A07B247D261000A55078 /* Info.plist */,
 				BD15A090247FD87600A55078 /* Supporting files */,
 				BD15A08F247FD86D00A55078 /* Controller */,
 				BD15A08E247FD85800A55078 /* View */,
 				BD15A08D247FD84600A55078 /* Model */,
-				BD15A07B247D261000A55078 /* Info.plist */,
 				BD15A081247D263F00A55078 /* MyTableViewController.swift */,
 				BD15A083247D278B00A55078 /* MyCustomTableView.swift */,
 				BD15A089247EC05800A55078 /* DetailViewController.swift */,
-				BD15A091247FE48200A55078 /* MyFirstCell.swift */,
-				BD15A095248130A300A55078 /* MyFirstCell2.swift */,
 			);
 			path = tableview_tableViewController;
 			sourceTree = "<group>";
@@ -104,6 +102,8 @@
 				BD15A073247D260C00A55078 /* Main.storyboard */,
 				BD15A093247FECD500A55078 /* RoundedImage.swift */,
 				BD15A0972481348B00A55078 /* ShadowView.swift */,
+				BD15A091247FE48200A55078 /* MyFirstCell.swift */,
+				BD15A095248130A300A55078 /* MyFirstCell2.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
