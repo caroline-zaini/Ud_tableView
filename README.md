@@ -8,6 +8,7 @@ This app was made to understand the TableViewController and tableView. We use :
 - Custom imageView
 - Refresh and reload data
 - prepare and performForSegue
+- add UITableView in the view file
 
 <img width="329" alt="Capture d’écran 2020-05-29 à 15 29 19" src="https://user-images.githubusercontent.com/39524369/83265121-5da3d700-a1c1-11ea-8043-be9021143dee.png">
 
