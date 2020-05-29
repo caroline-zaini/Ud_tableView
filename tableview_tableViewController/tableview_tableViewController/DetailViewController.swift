@@ -10,12 +10,18 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var iv: ShadowView!
+    @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var capitalLbl: UILabel!
+    
     var country: Country?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        print(country?.name)
+        guard let newCountry = country else { return }
+        iv.image = newCountry.flag
+        nameLbl.text = newCountry.name
+        capitalLbl.text = newCountry.capital
     }
     
 

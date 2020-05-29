@@ -20,6 +20,8 @@
 		BD15A08C247FD83600A55078 /* Continent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD15A08B247FD83600A55078 /* Continent.swift */; };
 		BD15A092247FE48200A55078 /* MyFirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD15A091247FE48200A55078 /* MyFirstCell.swift */; };
 		BD15A094247FECD500A55078 /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD15A093247FECD500A55078 /* RoundedImage.swift */; };
+		BD15A096248130A300A55078 /* MyFirstCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD15A095248130A300A55078 /* MyFirstCell2.swift */; };
+		BD15A0982481348B00A55078 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD15A0972481348B00A55078 /* ShadowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		BD15A08B247FD83600A55078 /* Continent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Continent.swift; sourceTree = "<group>"; };
 		BD15A091247FE48200A55078 /* MyFirstCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstCell.swift; sourceTree = "<group>"; };
 		BD15A093247FECD500A55078 /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
+		BD15A095248130A300A55078 /* MyFirstCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstCell2.swift; sourceTree = "<group>"; };
+		BD15A0972481348B00A55078 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 				BD15A083247D278B00A55078 /* MyCustomTableView.swift */,
 				BD15A089247EC05800A55078 /* DetailViewController.swift */,
 				BD15A091247FE48200A55078 /* MyFirstCell.swift */,
+				BD15A095248130A300A55078 /* MyFirstCell2.swift */,
 			);
 			path = tableview_tableViewController;
 			sourceTree = "<group>";
@@ -98,6 +103,7 @@
 			children = (
 				BD15A073247D260C00A55078 /* Main.storyboard */,
 				BD15A093247FECD500A55078 /* RoundedImage.swift */,
+				BD15A0972481348B00A55078 /* ShadowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -193,11 +199,13 @@
 			files = (
 				BD15A06E247D260C00A55078 /* AppDelegate.swift in Sources */,
 				BD15A070247D260C00A55078 /* SceneDelegate.swift in Sources */,
+				BD15A096248130A300A55078 /* MyFirstCell2.swift in Sources */,
 				BD15A092247FE48200A55078 /* MyFirstCell.swift in Sources */,
 				BD15A084247D278B00A55078 /* MyCustomTableView.swift in Sources */,
 				BD15A086247D288700A55078 /* Country.swift in Sources */,
 				BD15A08C247FD83600A55078 /* Continent.swift in Sources */,
 				BD15A082247D263F00A55078 /* MyTableViewController.swift in Sources */,
+				BD15A0982481348B00A55078 /* ShadowView.swift in Sources */,
 				BD15A094247FECD500A55078 /* RoundedImage.swift in Sources */,
 				BD15A088247D29C200A55078 /* CountryGetter.swift in Sources */,
 				BD15A08A247EC05800A55078 /* DetailViewController.swift in Sources */,

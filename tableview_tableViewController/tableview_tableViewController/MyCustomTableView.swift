@@ -13,12 +13,27 @@ class MyCustomTableView: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var countries: [Country] = CountryGetter().getAllCountries()
+    let control = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         /// 2.
         tableView.delegate = self
         tableView.dataSource = self
+        // pour avoir le chargement lors du refresh
+        tableView.refreshControl = control
+        // pour avoir un titre lors du chargement
+        control.attributedTitle = NSAttributedString(string: "chargement des données")
+        // changer la couleur du chargement
+        control.tintColor = .red
+        control.addTarget(self, action: #selector(reload), for: .valueChanged)
+    }
+    
+    @objc func reload() {
+        countries = CountryGetter().getAllCountries()
+        // recharge les données
+        tableView.reloadData()
+        control.endRefreshing()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -37,10 +52,15 @@ extension MyCustomTableView: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let country = countries[indexPath.row]
-        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-        cell.textLabel?.text = country.name
-        return cell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "cell2") as? MyFirstCell2 {
+            cell.setupCell(countries[indexPath.row])
+            return cell
+        }
+        return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

@@ -82,7 +82,12 @@ class MyTableViewController: UITableViewController {
     
     // Quand on sélectionne et déselectionne une cell :
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "push", sender: countries[indexPath.row])
+        
+        // Sans section :
+//        performSegue(withIdentifier: "push", sender: countries[indexPath.row])
+        
+        // Avec section :
+        performSegue(withIdentifier: "push", sender: continents[indexPath.section].countries[indexPath.row])
     }
     
     override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
@@ -102,9 +107,16 @@ class MyTableViewController: UITableViewController {
     /// On peut maintenant glisser vers la droite pour supprimer une row
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
+            
             // Delete the row from the data source
             
-            countries.remove(at: indexPath.row)
+            // Quand il y a une section :
+            let section = indexPath.section
+            let row = indexPath.row
+            continents[section].countries.remove(at: row)
+            
+            // Quand il n'y a pas de section :
+//            countries.remove(at: indexPath.row)
             
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
@@ -115,12 +127,17 @@ class MyTableViewController: UITableViewController {
 // MARK:- Déplacer une row
     
     /// juste en décommentant ces deux méthodes suivantes on peut déplacer  une row dans lécran :
-    // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
         
-        let c = countries[fromIndexPath.row]
-        countries.remove(at: fromIndexPath.row)
-        countries.insert(c, at: to.row)
+        // Quand il n'y a pas de section :
+//        let c = countries[fromIndexPath.row]
+//        countries.remove(at: fromIndexPath.row)
+//        countries.insert(c, at: to.row)
+        
+        // Quand il y a une section :
+        let c = continents[fromIndexPath.section].countries[fromIndexPath.row]
+        continents[fromIndexPath.section].countries.remove(at: fromIndexPath.row)
+        continents[to.section].countries.insert(c, at: to.row)
         
     }
 
