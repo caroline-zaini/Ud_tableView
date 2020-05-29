@@ -22,6 +22,7 @@
 		BD15A094247FECD500A55078 /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD15A093247FECD500A55078 /* RoundedImage.swift */; };
 		BD15A096248130A300A55078 /* MyFirstCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD15A095248130A300A55078 /* MyFirstCell2.swift */; };
 		BD15A0982481348B00A55078 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD15A0972481348B00A55078 /* ShadowView.swift */; };
+		BD15A09A2481439200A55078 /* MyTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD15A0992481439200A55078 /* MyTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		BD15A093247FECD500A55078 /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
 		BD15A095248130A300A55078 /* MyFirstCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstCell2.swift; sourceTree = "<group>"; };
 		BD15A0972481348B00A55078 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		BD15A0992481439200A55078 /* MyTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				BD15A0972481348B00A55078 /* ShadowView.swift */,
 				BD15A091247FE48200A55078 /* MyFirstCell.swift */,
 				BD15A095248130A300A55078 /* MyFirstCell2.swift */,
+				BD15A0992481439200A55078 /* MyTableView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				BD15A086247D288700A55078 /* Country.swift in Sources */,
 				BD15A08C247FD83600A55078 /* Continent.swift in Sources */,
 				BD15A082247D263F00A55078 /* MyTableViewController.swift in Sources */,
+				BD15A09A2481439200A55078 /* MyTableView.swift in Sources */,
 				BD15A0982481348B00A55078 /* ShadowView.swift in Sources */,
 				BD15A094247FECD500A55078 /* RoundedImage.swift in Sources */,
 				BD15A088247D29C200A55078 /* CountryGetter.swift in Sources */,

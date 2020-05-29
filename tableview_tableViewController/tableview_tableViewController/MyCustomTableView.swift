@@ -10,7 +10,7 @@ import UIKit
 
 class MyCustomTableView: UIViewController {
     /// 1.
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: MyTableView!
     
     var countries: [Country] = CountryGetter().getAllCountries()
     let control = UIRefreshControl()

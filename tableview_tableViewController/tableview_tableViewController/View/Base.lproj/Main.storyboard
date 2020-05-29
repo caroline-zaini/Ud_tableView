@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="q0F-27-WPY">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="q0F-27-WPY" customClass="MyTableView" customModule="tableview_tableViewController" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
@@ -42,6 +42,7 @@
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="TqX-9b-cCf" secondAttribute="trailing" constant="8" id="7jA-YV-CNb"/>
                                                 <constraint firstItem="TqX-9b-cCf" firstAttribute="top" secondItem="73g-Xn-Afe" secondAttribute="bottom" id="TFU-UJ-eXG"/>
@@ -51,6 +52,7 @@
                                                 <constraint firstItem="73g-Xn-Afe" firstAttribute="top" secondItem="xRO-Qw-OZx" secondAttribute="top" id="vTJ-cN-FH0"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="flag" destination="73g-Xn-Afe" id="9Mx-Wo-Tu7"/>
                                             <outlet property="namelbl" destination="TqX-9b-cCf" id="bwe-ET-YkF"/>
